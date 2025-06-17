@@ -29,4 +29,4 @@ This is the first phase of a Salesforce Lightning Web Component (LWC) project th
 3. Test submitting with and without required fields
 
 ---
-Built by **Shhubbham23** as part of the journey to become a **remote Salesforce LWC Developer**.
+Built by **Shhubbham23** as part of the journey to become a **Salesforce LWC Developer**.
