@@ -1,32 +1,62 @@
-# Local Service Request Form – Phase 1
+# 📄 Local Service Request Form – Phase 1 (LWC)
 
-This is the first phase of a Salesforce Lightning Web Component (LWC) project that allows users to submit a local service request like an electrician, plumber, or AC repair.
+This is a **Lightning Web Component (LWC)** built for Salesforce, designed to collect **local service requests** via a user-friendly form. It includes:
 
-## Features Implemented
-
-- Full Name, Phone Number, and Service Type — all required fields with validation
-- Inline error messages shown under each field
-- Success message after submission
-- Form resets after submission
-- Dropdown for selecting service type
-
-## Technologies Used
-
-- Salesforce Lightning Web Components (LWC)
-- lightning-input, lightning-combobox, lightning-button
-- Basic form validation in JavaScript
-
-## Upcoming in Phase 2
-
-- Saving submitted data to Salesforce using Apex
-- Creating a custom object (e.g., Local_Service__c)
-- Returning and displaying the record ID after submission
-
-## How to Preview (For Salesforce Users)
-
-1. Deploy this component to any org using VS Code + Salesforce CLI
-2. Open a Lightning App Page and drop the component there
-3. Test submitting with and without required fields
+✅ Custom form layout  
+✅ Required field validation  
+✅ Inline error messaging under inputs  
+✅ Conditional logic on submit  
+✅ Clean, responsive UI for record or app pages
 
 ---
-Built by **Shhubbham23** as part of the journey to become a **Salesforce LWC Developer**.
+
+## 🚀 Purpose
+
+This project is part of a **multi-phase real-life Salesforce LWC portfolio**, built to:
+
+- Practice core LWC development skills  
+- Solve realistic customer-facing use cases  
+- Showcase clean UI/UX and scalable logic  
+- Prepare for remote Salesforce Developer roles
+
+---
+
+## 🧩 Technologies Used
+
+- **Salesforce LWC (Lightning Web Components)**  
+- HTML5 / JavaScript  
+- Lightning Data Service (coming in Phase 2)  
+- Git + GitHub for version control  
+
+---
+
+## 📍 Roadmap
+
+**🔹 Phase 1** – Frontend form (✔️ Completed)  
+**🔹 Phase 2** – Apex integration for record creation  
+**🔹 Phase 3** – Admin features (list view, DevOps, alerts)
+
+---
+
+## 🛠 How to Use
+
+1. Deploy this LWC component to your Salesforce org  
+2. Add to a **Record Page** or **App Page**  
+3. Fill out the form and test validations  
+4. Customize further in future phases
+
+---
+
+## 📸 Screenshots
+
+- Blank as well as Filled Form UI  
+- Inline error validation  
+- Submission flow
+
+---
+
+## 👨‍💻 Built By
+
+> **Shubham Ahire**  
+> Aspiring Salesforce LWC Developer  
+> [GitHub](https://github.com/Shhubbham23)
