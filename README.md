@@ -1,62 +1,84 @@
-# 📄 Local Service Request Form – Phase 1 (LWC)
+# 🧾 Local Service Request Form – Phase 1 (LWC)
 
-This is a **Lightning Web Component (LWC)** built for Salesforce, designed to collect **local service requests** via a user-friendly form. It includes:
+A clean, user-friendly **Lightning Web Component (LWC)** form that allows users to request local services (like electricians, home cleaning, salon services, etc.). This is **Phase 1** of a real-world, multi-phase Salesforce app inspired by platforms like Urban Company.
 
-✅ Custom form layout  
-✅ Required field validation  
-✅ Inline error messaging under inputs  
-✅ Conditional logic on submit  
-✅ Clean, responsive UI for record or app pages
+> 🔧 Built for remote job readiness with scalable UI, proper form validations, and future-ready structure.
 
 ---
 
-## 🚀 Purpose
+## 🚀 TL;DR: Elevator Pitch
 
-This project is part of a **multi-phase real-life Salesforce LWC portfolio**, built to:
+A web-first alternative to Urban Company built on Salesforce. In Phase 1, users can submit local service requests through a responsive LWC form with validation. Upcoming phases will add Apex backend, Admin workflows, DevOps, and full real-time service management — all deployable inside a Salesforce org without needing a mobile app.
 
-- Practice core LWC development skills  
-- Solve realistic customer-facing use cases  
-- Showcase clean UI/UX and scalable logic  
-- Prepare for remote Salesforce Developer roles
+---
+
+## 🎯 Project Purpose
+
+- Practice **core LWC development** with realistic use cases  
+- Build a **modular, phase-wise portfolio project**  
+- Develop **interview-ready skills** for Salesforce roles  
+- Demonstrate **clean UI/UX, logic, and professional Git/GitHub usage**
 
 ---
 
 ## 🧩 Technologies Used
 
-- **Salesforce LWC (Lightning Web Components)**  
-- HTML5 / JavaScript  
-- Lightning Data Service (coming in Phase 2)  
+- **Salesforce Lightning Web Components (LWC)**  
+- **JavaScript + HTML + CSS**  
 - Git + GitHub for version control  
+- Apex (coming in Phase 2)  
+- Admin automation + DevOps (Phase 3)
 
 ---
 
-## 📍 Roadmap
+## 🧪 Features (Phase 1)
 
-**🔹 Phase 1** – Frontend form (✔️ Completed)  
-**🔹 Phase 2** – Apex integration for record creation  
-**🔹 Phase 3** – Admin features (list view, DevOps, alerts)
+- ✅ Custom form layout for Name, Mobile, Address, Service Type  
+- ✅ Field validation with inline error messages  
+- ✅ Responsive UI for desktop/tablet/mobile views  
+- ✅ Conditional submit logic for clean UX  
+- ❌ No backend/Apex yet – coming in next phase
+
+---
+
+## 📍 Project Roadmap
+
+| Phase        | Description                                    | Status     |
+|-------------|------------------------------------------------|------------|
+| Phase 1      | Front-end LWC form with validations             | ✅ Complete |
+| Phase 2      | Apex integration (record save, fetch, DB logic) | 🔜 Next     |
+| Phase 3      | Admin UI, DevOps integration, automation        | 📅 Planned  |
 
 ---
 
 ## 🛠 How to Use
 
 1. Deploy this LWC component to your Salesforce org  
-2. Add to a **Record Page** or **App Page**  
-3. Fill out the form and test validations  
-4. Customize further in future phases
+2. Add it to any **Record Page** or **App Page**  
+3. Fill out the form and observe validation logic  
+4. Fork or clone to extend for your own practice
 
 ---
 
+
 ## 📸 Screenshots
 
-- Blank as well as Filled Form UI  
-- Inline error validation  
-- Submission flow
+- 📷 Form UI (blank + filled)
+- ❗ Inline error messages for required fields
+- ✅ Success toast message on valid submission
+
+*(Screenshots are stored in the `screenshots/` folder of this repo)*
 
 ---
 
 ## 👨‍💻 Built By
 
-> **Shubham Ahire**  
-> Aspiring Salesforce LWC Developer  
-> [GitHub](https://github.com/Shhubbham23)
+**Shubham Ahire**  
+Aspiring Salesforce LWC Developer  
+🔗 [GitHub Profile](https://github.com/Shhubbham23)
+
+---
+
+## 🔗 Repository
+
+[🔗 View This Project on GitHub](https://github.com/Shhubbham23/local-service-request-form)
