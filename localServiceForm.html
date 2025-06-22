@@ -3,41 +3,52 @@
         <div class="slds-p-around_medium">
 
             <!-- Full Name -->
-            <lightning-input type="text" label="Full Name" name="fullName" required onchange={handleInputChange}>
-            </lightning-input>
-            <template if:true={showNameError}>
-                <div class="slds-text-color_error slds-m-top_xx-small">Full Name is required.</div>
-            </template>
-
-            <!-- Email -->
-            <lightning-input type="email" label="Email" name="email" onchange={handleInputChange}>
-            </lightning-input>
-
-            <!-- Phone -->
-            <lightning-input type="tel" label="Phone Number" name="phone" required onchange={handleInputChange}>
-            </lightning-input>
-            <template if:true={showPhoneError}>
-                <div class="slds-text-color_error slds-m-top_xx-small">Phone Number is required.</div>
-            </template>
-
-            <!-- Service Type -->
-            <lightning-combobox name="serviceType" label="Select Service" required value={serviceType}
-                placeholder="Choose a service" options={serviceOptions} onchange={handleInputChange}>
-            </lightning-combobox>
-            <template if:true={showServiceError}>
-                <div class="slds-text-color_error slds-m-top_xx-small">Please select a service.</div>
-            </template>
-
-            <!-- Message -->
-            <lightning-input type="text" label="Message or Additional Info" name="message" onchange={handleInputChange}>
-            </lightning-input>
-
-            <!-- Submit Button -->
-            <div class="slds-m-top_medium">
-                <lightning-button variant="brand" label="Submit Request" onclick={submitRequest}>
-                </lightning-button>
+            <div class="slds-m-bottom_medium">
+                <lightning-input type="text" label="Full Name" name="fullName" required
+                    onchange={handleInputChange}></lightning-input>
+                <template if:true={showNameError}>
+                    <div class="slds-text-color_error slds-m-top_xx-small">Full Name is required (only alphabets).</div>
+                </template>
             </div>
 
+            <!-- Email -->
+            <div class="slds-m-bottom_medium">
+                <lightning-input type="email" label="Email" name="email" onchange={handleInputChange}></lightning-input>
+                <template if:true={emailFormatWarning}>
+                    <div class="slds-text-color_error slds-m-top_xx-small">Please enter a valid email format.</div>
+                </template>
+            </div>
+
+            <!-- Phone -->
+            <div class="slds-m-bottom_medium">
+                <lightning-input type="tel" label="Phone Number" name="phone" max-length="10" required
+                    onchange={handleInputChange}></lightning-input>
+                <template if:true={showPhoneError}>
+                    <div class="slds-text-color_error slds-m-top_xx-small">Phone must be exactly 10 digits.</div>
+                </template>
+            </div>
+
+            <!-- Service Type -->
+            <div class="slds-m-bottom_medium">
+                <lightning-combobox name="serviceType" label="Select Service" required value={serviceType}
+                    placeholder="Choose a service" options={serviceOptions} onchange={handleInputChange}>
+                </lightning-combobox>
+                <template if:true={showServiceError}>
+                    <div class="slds-text-color_error slds-m-top_xx-small">Please select a service.</div>
+                </template>
+            </div>
+
+            <!-- Message -->
+            <div class="slds-m-bottom_medium">
+                <lightning-input type="text" label="Message or Additional Info" name="message"
+                    onchange={handleInputChange}>
+                </lightning-input>
+            </div>
+
+            <!-- Submit -->
+            <div class="slds-m-top_medium">
+                <lightning-button variant="brand" label="Submit Request" onclick={submitRequest}></lightning-button>
+            </div>
         </div>
     </lightning-card>
 </template>
